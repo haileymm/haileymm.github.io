@@ -1,12 +1,23 @@
 <!DOCTYPE HTML>
 <html lang="en-us">
     <head>
-        <meta charset="utf-8">
-        <title>Hailey Mundt Assignment portal</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Assignment portal for Hailey Mundt in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+      <link rel="stylesheet" href="C:\Users\haile\Documents\Hailey school\Winter 2021\WDD 230\haileymm.github.io-1\index.css">
+      <title>Hailey Mundt Assignment portal</title>
     </head>
     <body>
-      <img src="C:\Users\haile\Documents\Hailey school\Winter 2021\WDD 230\haileymm.github.io-1\pictures\profile-photo-1.jpg" alt="Photo of Hailey Mundt">
-        <h1>Hailey Mundt</h1>
+      <script>
+        let year = new Date().getFullYear();
+        let modified = document.lastModified;
+        document.getElementById("year").innerHTML = "© " + year + " Hailey Mundt | Nevada | BYUI Online Learning";
+        document.getElementById("output").innerHTML = "Last updated: " + modified;
+      </script>
+      <header>
+        <img class="profile" src="C:\Users\haile\Documents\Hailey school\Winter 2021\WDD 230\haileymm.github.io-1\pictures\profile-photo-1.jpg" alt="Photo of Hailey Mundt">
+          <h1>Hailey Mundt</h1>
+      </header>
           <h2>CIT 230: Assignment Portal</h2>
             <ul>
               <li>Lesson 02: <a href="index.html">Assignment Link</a></li>
@@ -15,6 +26,11 @@
               <li>Lesson 05: <a href="index.html">Assignment Link</a></li>
               <li>Lesson 06: <a href="index.html">Assignment Link</a></li>
             </ul>
+      <footer>
+        <div id="year"></div>
+        <div id="output"></div>
+        
+      </footer>
 
     </body>
 </html> 

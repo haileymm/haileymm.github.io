@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&family=Open+Sans&display=swap');
+
+body {
+    max-width: 700px;
+    background-color: #919090;
+    margin: auto;
+}
+
+header h1 {
+    border-radius: 10px;
+    background: #026e7c;
+    padding: 30px 70px 30px 70px;
+    font-family: 'Averia Serif Libre', cursive;
+    color: white; 
+    text-align: center;
+}
+    
+header img {
+    border-radius: 10px;
+    margin: 30px;
+    float: right;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+h2 {
+    border-bottom: solid 2px  #026e7c;
+    padding: 10px;
+    margin: 10px 50px 10px 10px;
+    font-family: 'Averia Serif Libre', cursive;
+    color: #333333;
+}
+
+ul li {
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+}
+
+a {
+    color: white;
+}
+a:link {
+    text-decoration: none;   
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #026e7c;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+}
+
+
+
