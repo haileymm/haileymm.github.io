@@ -11,7 +11,7 @@
       <script>
         let year = new Date().getFullYear();
         let modified = document.lastModified;
-        document.getElementById("year").innerHTML = "© " + year + " Hailey Mundt | Nevada | BYUI Online Learning";
+        document.getElementById("year").innerHTML = "© " + year + " Hailey Mundt | Nevada | ";
         document.getElementById("output").innerHTML = "Last updated: " + modified;
       </script>
       <header>
@@ -26,9 +26,18 @@
               <li>Lesson 05: <a href="index.html">Assignment Link</a></li>
               <li>Lesson 06: <a href="index.html">Assignment Link</a></li>
             </ul>
+            <br>
       <footer>
-        <div id="year"></div>
+        <div id="year"></div><!--<a href="https://www.byui.edu/online">BYUI Online Learning</a>-->
         <div id="output"></div>
+        <script>
+          document.write("© " + new Date().getFullYear() + " Hailey Mundt | Nevada | ");
+        </script>
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        <br>
+        <script>
+          document.write("Last Updated: " + document.lastModified);
+        </script>
         
       </footer>
 
