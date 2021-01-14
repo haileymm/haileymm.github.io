@@ -4,9 +4,13 @@
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="Assignment portal for Hailey Mundt in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-      <link rel="stylesheet" href="index.css">
       <title>Hailey Mundt Assignment portal</title>
+      <meta name="description" content="Assignment portal for Hailey Mundt in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+      
+      <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/small.css">
+      <link rel="stylesheet" href="css/medium.css">
     </head>
     
     <body>  
@@ -17,7 +21,7 @@
           
         <h2>CIT 230: Assignment Portal</h2>
             <ul>
-              <li>Lesson 02: <a href="index.html">Assignment Link</a></li>
+              <li>W02 Activity: <a href="normalize.css">Normalize CSS</a></li>
               <li>Lesson 03: <a href="index.html">Assignment Link</a></li>
               <li>Lesson 04: <a href="index.html">Assignment Link</a></li>
               <li>Lesson 05: <a href="index.html">Assignment Link</a></li>
@@ -30,12 +34,9 @@
         <div id="output"></div>
       </footer>
 
+      <script src="index.js"></script>
+
     </body>
 
-    <script>
-      let year = new Date().getFullYear();
-      let modified = document.lastModified;
-      document.getElementById("year").innerHTML = "© " + year + " Hailey Mundt | Nevada | ";
-      document.getElementById("output").innerHTML = "Last updated: " + modified;
-    </script>
+    
 </html> 
