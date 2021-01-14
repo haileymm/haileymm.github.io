@@ -53,7 +53,7 @@ ul li {
 }
 
 a {
-    color: #FA824C;
+    color: #fd6b27;
 }
 a:link {
     text-decoration: none;   
@@ -68,10 +68,11 @@ footer {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     padding: 30px;
+    color: white;
 }
 
 footer a {
-    color: black;
+    color: white;
 }
 
 
