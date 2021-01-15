@@ -90,7 +90,6 @@ article p {
 article {
     box-shadow: 1px 3px 7px #c9c9c9;
     border-radius: 10px 10px 0 0;
-    background-color: #f7f7f7;
     overflow: hidden;
 }
 
