@@ -1,0 +1,11 @@
+@media only screen and (min-width: 641px) {
+      
+    .grid {
+        display: grid;
+        max-width: 960px;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin: 50px;
+    }
+
+}

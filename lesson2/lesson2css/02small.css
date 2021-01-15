@@ -1,0 +1,120 @@
+body {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #FAFFFD;
+    width: 100%;
+    
+}
+
+header {
+    background: #3C91E6;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 50px;
+    box-shadow: 1px 3px 7px #c9c9c9;
+
+}
+
+header h1 {
+    font-size: 40px;
+    font-family: 'Averia Serif Libre', cursive;
+    color: #FAFFFD; 
+    text-align: center;
+    margin: 15 auto;
+
+}
+
+header h2 {
+    font-size: 25px;
+    border-bottom: solid 2px   #A2D729;
+    margin: 15px auto;
+    font-family: 'Averia Serif Libre', cursive;
+    color: #342E37;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+article h2 {
+    font-family: 'Averia Serif Libre', cursive;
+    color: #342E37;
+    text-align: center;
+    background-color: #3c91e65d; 
+    padding: 20px;
+    margin: 0;
+    font-size: 20px;
+
+    
+}
+
+article h3 {
+    text-align: center;
+    font-family: 'Averia Serif Libre', cursive;
+    border-bottom: solid 2px   #A2D729;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+
+}
+
+article a {
+    display: block;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #d33d02;
+    margin: 30px;
+}
+
+.grid {
+    display: grid;
+    max-width: 960px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 50px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    box-shadow: 1px 3px 7px #dadada;
+}
+
+article p {
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px auto 20px auto;
+    width: 85%;
+}
+
+article {
+    box-shadow: 1px 3px 7px #c9c9c9;
+    border-radius: 10px 10px 0 0;
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+
+article .potterybarn {
+    grid-column-start: 1;
+}
+
+article .scheels # {
+    grid-column-start: 2;
+}
+
+article .ting {
+    grid-column-start: 3;
+
+}
+
+footer {
+    background:  #3c91e65d;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 30px;
+    color: black;
+}
+
+footer a {
+    color: black;
+}
