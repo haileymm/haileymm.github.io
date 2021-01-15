@@ -20,7 +20,7 @@ header h1 {
     font-family: 'Averia Serif Libre', cursive;
     color: #FAFFFD; 
     text-align: center;
-    margin: 15 auto;
+    margin: 15px auto;
 
 }
 
@@ -97,7 +97,7 @@ article .potterybarn {
     grid-column-start: 1;
 }
 
-article .scheels # {
+article .scheels {
     grid-column-start: 2;
 }
 
