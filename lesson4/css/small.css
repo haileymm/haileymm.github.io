@@ -1,0 +1,114 @@
+body {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #FAFFFD;
+    width: 100%;
+}
+
+header {
+    background-color: #d6ebe8ff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 30px;
+
+} 
+
+header picture img {
+    width: 150px;
+    height: auto;
+    margin-right: 30px;
+    margin-top: 10px;
+    
+}
+
+header h1 {
+    font-family: 'Slabo 27px', serif;
+    color: #2d4e62ff;
+    font-size: 50px;
+    margin-top: 0;
+    width: max-content;
+}
+
+header h2 {
+    font-family: 'Lato', sans-serif;
+    color: #568a7bff;
+    font-size: 30px;
+    margin-top: -35px;
+
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+
+}
+
+nav {
+    background-color: #2dc8b6ff;
+    margin-top: -20px;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+nav ul li {
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+nav ul li:hover {
+    background-color:#2d4e62ff;
+    color: white;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main h3 {
+    font-family: 'Slabo 27px', serif;
+    text-align: center;
+    margin: 30px;
+    color: #2d4e62ff;
+    font-size: 35px;
+}
+
+main section {
+    margin-bottom: 70px;
+}
+
+section div {
+    font-family: 'Lato', sans-serif;
+    background-color: #d6ebe8ff;
+    margin: 20px 30px;
+    padding: 20px;
+ 
+}
+
+footer {
+    background-color: #2dc8b6ff;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding: 30px;
+}
