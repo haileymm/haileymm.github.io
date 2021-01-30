@@ -46,24 +46,27 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-nav button {
-    margin: .2rem 2%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.6rem;
-    color: #fff;
 
-}
 
 nav {
     background-color: #2dc8b6ff;
     margin-top: -20px;
+    text-align: center;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 10px;
 }
 
 nav ul {
     padding: 0;
     list-style: none;
     text-align: center;
+    display: block;
 }
 
 nav ul.hide {
