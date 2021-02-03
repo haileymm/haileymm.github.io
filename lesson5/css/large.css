@@ -1,0 +1,50 @@
+@media only screen and (max-width: 64rem) {
+
+    header h1{
+        font-size: 50px;
+    }
+    
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+    nav ul {
+        margin-left: 2%;
+        
+    }
+
+    .summary {
+        position: absolute;
+        top: 230px;
+        left: 150px;
+        background-color: rgba(214, 235, 232, 0.514);
+    }
+
+    .hero {
+        width: 960px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .hero img {
+        width: 960px;
+        height: auto;
+
+    }
+
+    nav ul li {
+        float: left;
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    main h1 {
+        font-size: 40px;
+    }
+
+}
