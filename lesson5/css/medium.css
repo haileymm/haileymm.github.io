@@ -72,7 +72,7 @@
 
     .forecast li {
         display: inline-block;
-        border-style: solid;
+        border-style: none;
         width: 175px;
         height: 225px;
         margin: 10px;
