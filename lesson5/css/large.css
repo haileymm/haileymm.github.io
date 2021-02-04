@@ -1,4 +1,4 @@
-@media only screen and (max-width: 64rem) {
+@media only screen and (min-width: 1000px) {
 
     header h1{
         font-size: 50px;
@@ -9,37 +9,38 @@
     }
 
     nav ul.hide {
-        display: block;
-    }
-    nav ul {
-        margin-left: 2%;
-        
+        display: flex;
+        justify-content: center;
     }
 
     .summary {
         position: absolute;
-        top: 230px;
-        left: 150px;
-        background-color: rgba(214, 235, 232, 0.514);
+        top: 265px;
+        left: 200px;
+        background-color: rgba(214, 235, 232, 0.63);
+        box-shadow: none;
     }
 
     .hero {
         width: 960px;
-        height: 400px;
-        display: flex;
-        justify-content: center;
+        height: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
         
     }
 
     .hero img {
         width: 960px;
         height: auto;
+        margin-top: -150px;
 
     }
 
     nav ul li {
         float: left;
-        font-size: 20px;
+        font-size: 15px;
         padding: 20px;
     }
 

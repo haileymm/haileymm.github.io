@@ -72,3 +72,13 @@ if (day == 7) {
 document.getElementById("year").innerHTML = "&#169; " + year + " Hailey Mundt";
 document.getElementById("output").innerHTML = day + ', ' + dayNum + ' ' + month + ' ' + year;
 
+if (day == "Saturday") {
+    document.getElementById("announcement").innerHTML = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
+}
+
+if (day != "Saturday") {
+    document.getElementById("announcement").style.display = 'none';
+}
+
+
+

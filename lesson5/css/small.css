@@ -5,48 +5,45 @@ body {
     width: 100%;
 }
 
+#announcement {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fcca46ff;
+    padding: 20px;
+}
+
 header {
     background-color: #d6ebe8ff;
     display: flex;
-    align-content: center;
     justify-content: center;
-    justify-items: center;
-    align-items: center;
     padding: 30px;
-
 } 
 
 header picture img {
-    width: 150px;
+    width: 100px;
     height: auto;
-    margin-right: 30px;
-    margin-top: -15px;
     
 }
 
 header h1 {
     font-family: 'Slabo 27px', serif;
     color: #2d4e62ff;
-    font-size: 50px;
-    margin-top: 10px;
-    width: max-content;
+    font-size: 2em;
+    margin-top: 5px;
+    
 }
 
 header h2 {
     font-family: 'Lato', sans-serif;
     color: #568a7bff;
-    font-size: 30px;
-    margin-top: -35px;
+    font-size: 1.5em;
+    margin-top: -20px;
 
 }
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-
-/*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-
 
 nav {
     background-color: #2dc8b6ff;
@@ -64,14 +61,16 @@ nav button {
 }
 
 nav ul {
-    padding: 0;
     list-style: none;
     text-align: center;
     display: block;
+    padding-left: 0;
+
 }
 
-nav ul.hide {
+nav ul .hide {
     display: none;
+    
 }
 
 nav ul li {
@@ -112,11 +111,26 @@ main h3 {
 }
 
 .summary {
-    margin: 100px;
-    padding: 50px;
+    margin: 50px;
+    padding: 35px;
     background-color: #d6ebe8ff;
+    text-align: center;
+    line-height: 1.5;
+    box-shadow: 3px 3px 20px gray;
 }
 
+.summary h4 {
+    font-family: 'Slabo 27px', serif;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+}
+
+.summary p {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
 .articles div {
     font-family: 'Lato', sans-serif;
     background-color: #d6ebe8ff;
