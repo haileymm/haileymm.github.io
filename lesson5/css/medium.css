@@ -1,4 +1,12 @@
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1100px) {
+
+    .logo {
+        width: 175px;
+        height: auto;
+        margin-top: -10px;
+    }
+
+    
     header h1{
         font-size: 50px;
     }
@@ -10,13 +18,37 @@
     nav ul.hide {
         display: flex;
         justify-content: center;
+        margin: 0;
+    }
+
+    .summary {
+        position: absolute;
+        top: 350px;
+        left: 150px;
+        background-color: rgba(214, 235, 232, 0.63);
+        box-shadow: none;
+        width: 250px;
+    }
+
+    .hero {
+        width: 1200px;
+        height: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        
+    }
+
+    .hero img {
+        width: 1200px;
+        height: auto;
+        margin-top: -225px;
 
     }
-    nav ul {
-        margin: 0;
-    
-    }
+
     nav ul li {
+        float: left;
         font-size: 15px;
         padding: 20px;
     }
@@ -24,5 +56,84 @@
     main h1 {
         font-size: 40px;
     }
+
+    div .forecast {
+        list-style: none;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+    
+    .forecast h5 {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    .forecast li {
+        display: inline-block;
+        border-style: solid;
+        width: 175px;
+        height: 225px;
+        margin: 10px;
+    }
+    
+    .forecast li img {
+        width: 150px;
+        height: auto;
+    
+    }
+    section .article {
+        padding: 60px;
+        
+    }
+    .article img {
+        float: right;
+        margin: 50px 100px 50px 100px;
+        width: 400px;
+        height: auto;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+
+    div .phone {
+        display: none;
+    }
+
+    div .email {
+        display: none;
+    }
+
+    div .social {
+        display: block;
+    }
+
+    .social div {
+        grid-column: 2/3;
+        display: flex;
+    }
+
+    .map {
+        grid-column: 1/2;
+        margin: 20px;
+    }
+
+    .social img {
+        width: 50px;
+        height: auto;
+        margin: 20px;
+    }
+
+    .social_links img {
+        margin: 70px 20px 20px 20px;
+        width: 75px;
+        height: auto;
+    }
+
 
 }

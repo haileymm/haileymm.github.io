@@ -9,6 +9,8 @@ let year = new Date().getFullYear();
 let day = new Date().getDay();
 let dayNum = new Date().getDate();
 let month = new Date().getMonth();
+
+
 if (month == 0) {
     month = "January"
 }
@@ -69,6 +71,7 @@ if (day == 6) {
 if (day == 7) {
     day = "Sunday";
 }
+
 document.getElementById("year").innerHTML = "&#169; " + year + " Hailey Mundt";
 document.getElementById("output").innerHTML = day + ', ' + dayNum + ' ' + month + ' ' + year;
 

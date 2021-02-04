@@ -45,6 +45,10 @@ header h2 {
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
 nav {
     background-color: #2dc8b6ff;
     margin-top: -20px;
@@ -70,7 +74,6 @@ nav ul {
 
 nav ul .hide {
     display: none;
-    
 }
 
 nav ul li {
@@ -80,6 +83,11 @@ nav ul li {
 
 nav ul li:hover {
     background-color:#2d4e62ff;
+    color: white;
+}
+
+nav ul .active {
+    background-color:rgba(25, 43, 54, 0.253);
     color: white;
 }
 
@@ -110,35 +118,130 @@ main h3 {
     height: auto;
 }
 
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    padding-left: 35px;
+}
+
+div .label {
+    font-family: 'Lato', sans-serif;
+    text-align: right;
+    margin-right: 5px;
+}
+
+div .info {
+    text-align: left;
+    margin-left: 5px;
+    font-family: 'Lato', sans-serif;
+}
+
 .summary {
-    margin: 50px;
-    padding: 35px;
+    position: absolute;
+    top: 975px;
+
+    padding-top: 45px;
     background-color: #d6ebe8ff;
     text-align: center;
     line-height: 1.5;
     box-shadow: 3px 3px 20px gray;
+    width: 100%;
+    height: 250px;
 }
 
-.summary h4 {
+h4 {
     font-family: 'Slabo 27px', serif;
     font-size: 25px;
     margin-top: 0;
     margin-bottom: 10px;
-
 }
 
 .summary p {
     font-family: 'Lato', sans-serif;
     margin: 0;
 }
-.articles div {
-    font-family: 'Lato', sans-serif;
-    background-color: #d6ebe8ff;
-    margin: 20px 30px;
-    padding: 20px;
- 
+
+div .forecast {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin-top: 350px;
 }
 
+.forecast h5 {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+
+.forecast li {
+    display: inline-block;
+    padding: 10px;
+    border-style: solid;
+    width: 90px;
+}
+
+.forecast li img {
+    width: 50px;
+    height: auto;
+
+}
+
+.article {
+    padding: 60px;
+    background-color: #d6ebe8ff;
+    margin: 50px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    
+}
+.article img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact {
+    text-align: left;
+    background-color: #d6ebe8ff;
+    padding: 70px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+
+div .phone {
+    display: flex;
+    margin-top: 30px;
+}
+
+div .phone img {
+    width: 40px;
+    height: auto;
+    margin: 20px;
+}
+
+div .email {
+    display: flex;
+}
+
+div .email img {
+    width: 40px;
+    height: auto;
+    margin: 20px;
+}
+
+div .map {
+    margin-top: 30px;
+}
+
+div .social {
+    display: none;
+}
 
 footer {
     background-color: #2dc8b6ff;
@@ -146,3 +249,4 @@ footer {
     font-family: 'Lato', sans-serif;
     padding: 30px;
 }
+

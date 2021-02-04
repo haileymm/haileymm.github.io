@@ -27,7 +27,7 @@
         <button onclick="toggleMenu()">&#9776; Menu</button>
           <ul id="primaryNav" class="hide">
                   <li><a>Home</a></li>
-                  <li><a>Preston</a></li>
+                  <li class="active"><a>Preston</a></li>
                   <li><a>Soda Springs</a></li>
                   <li><a>Fish Haven</a></li>
                   <li><a>Storm Center</a></li>
@@ -42,18 +42,81 @@
           </section>
           <div class="summary">
               <h4>Weather Summary</h4>
-              <p>Currently: Sunny<br>
-              High: 76 degrees F<br>
-              Wind Chill: degrees F<br>
-              Humidity: 69%<br>
-              Wind Speed: 5mph
-            </p>
+              <div class="stats">
+                <div class="label">Currently:<br>
+              High:<br>
+              Wind Chill:<br>
+              Humidity:<br>
+              Wind Speed:
+              </div>
+              <div class="info">Sunny<br>
+                75&#176 F<br>
+                ...<br>
+                60%<br>
+                5 MPH
+
+              </div>
           </div>
         </section>
-          <section class="articles">
-            <div>5 Day Forcast</div>
-            <div>Article</div>
-            <div>Contact Information</div>
+            <div>
+              <ul class="forecast">
+                <li class='day1'><h5>Monday<br>75&#176 F</h5>
+                  <img src="images/partly_sunny.png" alt="Partly Sunny Icon"></li>
+                <li class='day2'><h5>Tuesday<br>77&#176 F</h5>
+                  <img src="images/partly_sunny.png" alt="Partly Sunny Icon"></li>
+                <li class='day3'><h5>Wednesday<br>80&#176 F</h5>
+                  <img src="images/sunny.png" alt="Partly Sunny Icon"></li>
+                <li class='day4'><h5>Thursday<br>74&#176 F</h5>
+                  <img src="images/tstorms.png" alt="Partly Sunny Icon"></li>
+                <li class='day5'><h5>Friday<br>75&#176 F</h5>
+                  <img src="images/cloudy.png" alt="Partly Sunny Icon"></li>
+                
+                </ul>
+              </div>
+            <div class="article">
+              <h4>Short Story: The Truth About Idaho</h4>
+              <h5>by Jackie Johnson</h5>
+
+              <img src="images/child.jpg" alt="Child running through orchard">
+
+              <p> Spicy jalapeno bacon ipsum dolor amet nisi fugiat minim dolor, non flank porchetta sint est ribeye ex duis dolore. Do prosciutto turducken ut incididunt occaecat picanha quis consequat bresaola ea esse jowl short ribs. Salami mollit magna elit, culpa proident brisket irure bresaola. Qui in rump eiusmod bacon anim alcatra shankle sunt officia. Chuck consectetur aute nulla magna. Aliqua ut beef ribs veniam fugiat ullamco nostrud spare ribs aute irure minim.
+
+                Frankfurter laborum tenderloin, excepteur pork beef brisket sirloin fugiat non ut tail ground round. Incididunt velit ut doner occaecat. Ad anim tempor, voluptate chislic fugiat occaecat ut swine in ex nulla aute pork chop. Beef ribs id strip steak cupim anim, sint pork chop ut pastrami. Sirloin eiusmod cillum, ipsum qui pork loin prosciutto t-bone esse ribeye in ball tip. Boudin bresaola swine picanha in fatback excepteur sint venison ea tempor jowl veniam frankfurter. <br><br> Mollit enim in tongue.
+                
+                Culpa chicken cupidatat eu qui prosciutto swine bacon aute. Sirloin pork loin cupim dolor, tail culpa cupidatat spare ribs aliqua. Salami doner sint, in ea eu biltong. Pork chop anim doner corned beef, dolore sausage duis burgdoggen shankle est non exercitation turducken strip steak. Jowl occaecat eiusmod enim consectetur aliquip meatloaf ut leberkas minim pastrami exercitation swine frankfurter. Eu non picanha doner, eiusmod drumstick do prosciutto velit voluptate spare ribs sirloin.
+                
+                Boudin consequat tongue esse chislic meatloaf beef. Hamburger consectetur pastrami, swine bacon adipisicing aliqua sed pig venison. Ham pancetta pork loin, kevin lorem aute cupim ball tip brisket. Irure voluptate chislic, kevin mollit landjaeger sint pancetta ea ham hock capicola chuck dolore minim. Boudin ball tip turducken culpa voluptate sunt rump kevin non sausage veniam dolore turkey exercitation. <br><br>  Corned beef tongue prosciutto, chuck cillum kielbasa fugiat velit commodo t-bone irure aliqua.
+              </p>
+              
+                
+
+            </div>
+            
+            <div class="contact">
+              <h4>Contact Information</h4>
+              <div class='phone'><img src="images/phone.png" alt="phone icon">
+              <p>(123) 456-7890</p>
+              </div>
+              <div class="email"><img src="images/email.png" alt="email icon">
+              <p> info@southeastidahome.com</p>
+              </div>
+              <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1498704.0466782819!2d-113.26747061492317!3d42.80618214987265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssoutheast%20idaho!5e0!3m2!1sen!2sus!4v1612471535739!5m2!1sen!2sus" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+              <div class="social">
+                <div><img src="images/phone.png" alt="phone icon">
+                  <p>(123) 456-7890</p>
+                  </div>
+                  <div><img src="images/email.png" alt="email icon">
+                  <p> info@southeastidahome.com</p>
+                  </div>
+                <div class="social_links">
+                <img src="images/facebook.png" alt="facebook logo">
+                <img src="images/insta.png" alt="instagram logo">
+                <img src="images/twitter.png" alt="twitter logo">
+                </div>
+              </div>
+            </div>
           </section>
       </main>    
       <footer>
