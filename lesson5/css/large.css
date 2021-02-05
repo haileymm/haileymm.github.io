@@ -19,14 +19,6 @@
         justify-content: center;
     }
 
-    .summary {
-        position: absolute;
-        top: 350px;
-        left: 500px;
-        background-color: rgba(214, 235, 232, 0.63);
-        box-shadow: none;
-    }
-
     .hero {
         width: 1200px;
         height: 300px;
@@ -55,21 +47,8 @@
     }
     section .article {
         padding: 60px;
-        
-    }
+    {}
 
-    .forecast h5 {
-        font-size: 25px;
-        margin: 0;
-    }
-
-    .forecast li {
-        display: inline-block;
-        border-style: solid;
-        width: 175px;
-        height: 225px;
-        margin: 10px;
-    }
     
     .forecast li img {
         width: 150px;
