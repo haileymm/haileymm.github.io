@@ -1,0 +1,25 @@
+
+
+► Be sure to optimize all the images you are using on the page and any images you use going forward to help with the performance of the page.  
+Make sure that images in all views do not violate their intrinsic aspect ratio.
+
+► The "preston-6.html" town page is required to have the following image in the main hero area that contains the weather summary.  
+Use the srcset and width attributes as shown in this weeks activity to provide three different versions of the optimized image to be used in the small,
+ medium, and large views. 
+
+The three images should be modified to support the three viewport sizes AND LABELED with a text overlay using the words 
+"small", "medium", and "large" so that they are easily recognized when testing the page in the different viewports.
+
+
+You will revert back to your own hero image in the next lesson. You will need to practice these same techniques or a 
+combination of them to support responsive, optimized images throughout your weather site going forward.
+
+Input requirements: "Wind Chill Temperature is officially defined for temperatures at or below 10 °C (50 °F) and wind speeds above 4.8 kilometers per hour (3.0 mph)."
+
+► Improve the page content and apply feedback from previous lessons
+
+► Commit and push your town page as early as possible for review within your Teaching Team. As your team meets this week, discuss challenges and provide feedback to each other on your individual page builds.
+
+► Remember to update your assignment portal home page with a link to this assignment.
+
+► Submit your GitHub Pages URL via this assignment dropbox. 
