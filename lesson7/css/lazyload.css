@@ -11,7 +11,7 @@ div {
 
 img {
     filter: blur(0px);
-    transition: filter 1s;
+    transition: filter 2s;
 }
 
 img[data-src] {
