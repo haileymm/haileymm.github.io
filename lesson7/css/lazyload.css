@@ -8,11 +8,12 @@ div {
     justify-content: center;
 }
 
-div img[data-src] {
-    filter: blur(3px);
-} 
 
-div img {
+img {
     filter: blur(0px);
     transition: filter 1s;
 }
+
+img[data-src] {
+    filter: blur(3px);
+} 

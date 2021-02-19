@@ -1,0 +1,58 @@
+@media only screen and (min-width: 1420px) {
+    
+    .logo {
+        width: 175px;
+        height: auto;
+        margin-top: -10px;
+    }
+    
+    header h1{
+        font-size: 50px;
+    }
+    
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* .hero {
+        width: 1200px;
+        height: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        
+    }
+
+    .hero img {
+        width: 1200px;
+        height: auto;
+        margin-top: -225px;
+
+    } */
+
+    nav ul li {
+        float: left;
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    main h1 {
+        font-size: 40px;
+    }
+
+    section .article {
+        padding: 60px;
+    }
+
+    .article img {
+        float: right;
+        margin-top: -50px;
+        width: 250px;
+    }
+}
