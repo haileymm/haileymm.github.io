@@ -119,7 +119,6 @@ h4 {
     grid-template-columns: 1fr;
     justify-items: center;
     justify-content: center;
-    margin: 50px;
     grid-gap: 30px;
 }
 
