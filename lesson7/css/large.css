@@ -19,23 +19,6 @@
         justify-content: center;
     }
 
-    /* .hero {
-        width: 1200px;
-        height: 300px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        overflow: hidden;
-        
-    }
-
-    .hero img {
-        width: 1200px;
-        height: auto;
-        margin-top: -225px;
-
-    } */
-
     nav ul li {
         float: left;
         font-size: 15px;
@@ -46,13 +29,15 @@
         font-size: 40px;
     }
 
-    section .article {
-        padding: 60px;
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        justify-content: center;
     }
 
-    .article img {
-        float: right;
-        margin-top: -50px;
-        width: 250px;
+    figure:hover {
+        box-shadow: 1px 1px 10px 5px #2d4e62ff;
     }
+
 }

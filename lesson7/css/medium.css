@@ -21,32 +21,6 @@
         margin: 0;
     }
 
-    .summary {
-        position: absolute;
-        top: 400px;
-        left: 475px;
-        background-color: rgba(214, 235, 232, 0.63);
-        box-shadow: none;
-        width: 250px;
-    }
-
-    /* .hero {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        overflow: hidden;
-        
-    }
-
-    .hero img {
-        width: 1200px;
-        height: auto;
-        margin-top: -225px;
-
-    } */
-
     nav ul li {
         float: left;
         font-size: 15px;
@@ -57,45 +31,10 @@
         font-size: 40px;
     }
 
-    div .forecast {
-        list-style: none;
-        text-align: center;
-        width: 100%;
-        padding: 0;
-        margin-top: 20px;
-    }
-    
-    .forecast h5 {
-        font-size: 15px;
-        margin-top: 20px;
-    }
-
-    .forecast li {
-        display: inline-block;
-        border-style: none;
-        width: 120px;
-        height: auto;
-        margin: 10px;
-    }
-    
-    .forecast li img {
-        width: 100px;
-        height: auto;
-    
-    }
-    .article {
-        padding: 50px;
-        
-    }
-
-    .article {
-        margin-top: 50px;
-    }
-    .article img {
-        float: right;
-        margin: 50px 50px 50px 50px;
-        width: 300px;
-        height: auto;
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
 
     .contact {
@@ -103,6 +42,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         justify-items: center;
+        justify-content: center;
     }
 
     div .phone {

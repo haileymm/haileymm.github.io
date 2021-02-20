@@ -5,12 +5,14 @@ body {
     width: 100%;
 }
 
-#announcement {
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    background-color: #fcca46ff;
-    padding: 20px;
+
+img {
+    filter: blur(0px);
+    transition: filter 2s;
+}
+
+img[data-src] {
+    filter: blur(3px);
 }
 
 header {
@@ -104,54 +106,6 @@ main h3 {
     color: #2d4e62ff;
     font-size: 35px;
 }
-.hero {
-    width: 100%;
-    height: auto;
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    /* overflow: hidden; */
-    
-}
-
-.hero img {
-    width: 75%;
-    height: auto;
-    margin-top: -10px;
-
-}
-
-.stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-content: center;
-    padding-left: 35px;
-}
-
-div .label {
-    font-family: 'Lato', sans-serif;
-    text-align: right;
-    margin-right: 5px;
-}
-
-div .info {
-    text-align: left;
-    margin-left: 5px;
-    font-family: 'Lato', sans-serif;
-}
-
-.summary {
-    padding-top: 45px;
-    margin-top: 20px;
-    background-color: #d6ebe8ff;
-    text-align: center;
-    line-height: 1.5;
-    box-shadow: 3px 3px 20px gray;
-    width: 100%;
-    height: 250px;
-}
 
 h4 {
     font-family: 'Slabo 27px', serif;
@@ -160,53 +114,29 @@ h4 {
     margin-bottom: 10px;
 }
 
-.summary p {
-    font-family: 'Lato', sans-serif;
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+    margin: 50px;
+    grid-gap: 30px;
+}
+
+figure {
+    box-shadow: 1px 1px 5px 1px #8888;
+    width: 400px;
+    overflow: hidden;
     margin: 0;
 }
 
-div ul.forecast {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin-top: 50px;
-}
-
-.forecast h5 {
+figcaption {
     font-family: 'Lato', sans-serif;
-    font-size: 10px;
-    text-align: center;
-}
-
-.forecast li {
-    display: inline-block;
-    width: 57px;
-    background-color: #d6ebe8ff; 
-    text-align: center;
-}
-
-.forecast li img {
-    width: 50px;
-    height: auto;
-
-}
-
-.article {
+    font-size: 16px;
     padding: 20px;
-    background-color: #d6ebe8ff;
-    margin: 30px;
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    margin-top: 50px;
-    
+    text-align: center;
 }
-.article img {
-    width: 250px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .contact {
     text-align: left;
