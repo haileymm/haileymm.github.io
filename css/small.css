@@ -63,6 +63,11 @@ a:hover {
     text-decoration: underline;
 }
 
+main section.thanks {
+    font-family: 'Open Sans', sans-serif;
+    padding: 30px;
+}
+
 footer {
     background:  #3c91e65d;
     text-align: center;

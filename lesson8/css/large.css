@@ -1,0 +1,43 @@
+@media only screen and (min-width: 1420px) {
+    
+    .logo {
+        width: 175px;
+        height: auto;
+        margin-top: -10px;
+    }
+    
+    header h1{
+        font-size: 50px;
+    }
+    
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        float: left;
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    main h1 {
+        font-size: 40px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    figure:hover {
+        box-shadow: 1px 1px 10px 5px #2d4e62ff;
+    }
+
+}

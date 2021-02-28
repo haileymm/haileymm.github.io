@@ -1,0 +1,250 @@
+body {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #FAFFFD;
+    width: 100%;
+}
+
+/* ----------------- header --------------------- */
+header {
+    background-color: #d6ebe8ff;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+} 
+
+header picture img {
+    width: 100px;
+    height: auto;
+    
+}
+
+header h1 {
+    font-family: 'Slabo 27px', serif;
+    color: #2d4e62ff;
+    font-size: 2em;
+    margin-top: 5px;
+    
+}
+
+header h2 {
+    font-family: 'Lato', sans-serif;
+    color: #568a7bff;
+    font-size: 1.5em;
+    margin-top: -20px;
+
+}
+
+/* ----------------- navigation --------------------- */
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+nav {
+    background-color: #2dc8b6ff;
+    margin-top: -20px;
+    text-align: center;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    display: block;
+    padding-left: 0;
+
+}
+
+nav ul.hide {
+    display: none;
+}
+
+nav ul li {
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+nav ul li:hover {
+    background-color:#2d4e62ff;
+    color: white;
+}
+
+nav ul .active {
+    background-color:rgba(25, 43, 54, 0.253);
+    color: white;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* ----------------- main --------------------- */
+
+main h3 {
+    font-family: 'Slabo 27px', serif;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #2d4e62ff;
+    font-size: 35px;
+}
+
+/* ----------------- form --------------------- */
+form {
+    padding: 0px 25px 0px 25px;
+    max-width: 600px;
+    margin: -5px auto 50px auto;
+}
+
+form fieldset {
+    margin: 20px;
+    border: 2px solid #d6ebe8ff;
+    border-radius: 4px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #2d4e62ff;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Slabo 27px', serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+form label.top, form div {
+    display: block;
+    padding: 15px 0 5px 0;
+    color: #2d4e62ff;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+ }
+
+form label.sbs {
+    display: block;
+    padding: 5px;
+    color: #2d4e62ff;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif; 
+}
+
+form label input {
+    margin-top: 5px;
+}
+
+
+form input {
+    padding: 7px;
+
+}
+
+input:invalid {
+	color: #000;
+    border: solid 3px #fcca46ff;
+    border-radius: 4px;
+}
+input:valid {
+	border: solid 2px #568a7bff;
+	color: #000;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 250px;
+    height: 100px;
+    margin-top: 5px;
+}
+
+.submitBtn {
+    display: block;
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+    padding: 15px;
+    background-color: #2dc8b6ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 30px auto 20px auto;
+    box-shadow: 2px 2px 10px 2px #2d4e62ff;
+}
+
+
+/* ----------------- thanks text --------------------- */
+
+.thanks {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    padding: 5px 45px 45px 50px;
+    text-align: center;
+}
+
+/* ----------------- contact info --------------------- */
+h4 {
+    font-family: 'Slabo 27px', serif;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.contact {
+    text-align: left;
+    background-color: #d6ebe8ff;
+    padding: 70px;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+
+
+div .phone {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+div .phone img {
+    width: 20px;
+    height: auto;
+    margin: 20px;
+}
+
+div .email {
+    display: flex;
+    align-items: center;
+}
+
+div .email img {
+    width: 20px;
+    height: auto;
+    margin: 20px;
+}
+
+div .map {
+    margin-top: 30px;
+}
+
+div .social {
+    display: none;
+}
+
+/* ----------------- footer --------------------- */
+
+footer {
+    background-color: #2dc8b6ff;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding: 30px;
+}
+
