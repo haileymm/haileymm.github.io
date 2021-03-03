@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rozha+One&display=swap');
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 30px;
+}
+section {
+    background-color: rgb(221, 215, 211);
+    padding-bottom: 30px;
+    border: solid 2px rgb(214, 195, 182);
+    
+}
+
+h1 {
+    font-size: 35px;
+    color: rgb(68, 2, 54);
+    font-family: 'Rozha One', serif;
+    text-align: center;
+    margin: 50px;
+}
+
+h2 {
+    color: rgb(68, 2, 54);
+    font-family: 'Rozha One', serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 40px auto 20px auto;
+    box-shadow: 0px 0px 20px 2px rgba(56, 55, 55, 0.533)
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+@media only screen and (min-width: 900px) {
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 1420px) {
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 50px;
+    }
+
+}
