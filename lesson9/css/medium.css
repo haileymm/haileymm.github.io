@@ -10,7 +10,8 @@
     header h1{
         font-size: 50px;
     }
-    
+
+    /* ----------------NAV---------------- */
     nav button {
         display: none;
     }
@@ -27,18 +28,45 @@
         padding: 20px;
     }
 
+
+/* ------------------MAIN-------------------- */
     main h1 {
         font-size: 40px;
     }
 
-    .gallery {
+    .cards section {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        align-items: center;
         justify-items: center;
-        margin-left: 200px;
-        margin-right: 200px;
+        width: auto;
+        padding: 20px;
     }
 
+    .cards h4 {
+        margin: 0 auto 5px auto;
+    }
+
+    article .cards section:nth-child(odd) div {
+        grid-column: 2;
+        grid-row: 1;
+        padding-left: 25px;
+    }
+
+    article .cards section:nth-child(odd) img {
+        grid-column: 1;
+    }
+
+    article .cards section:nth-child(even) div {
+        padding-right: 25px;
+    }
+
+    .cards img {
+        margin: 0;
+    }
+    
+    
+/* -------------CONTACT--------------- */
     .contact {
         display: grid;
         grid-template-columns: 1fr 1fr;

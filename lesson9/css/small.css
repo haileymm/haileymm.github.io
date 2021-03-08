@@ -16,6 +16,7 @@ header {
 header picture img {
     width: 100px;
     height: auto;
+    margin-top: 0px
     
 }
 
@@ -95,6 +96,10 @@ nav ul .active {
 
 /* ----------------- main --------------------- */
 
+.hero {
+    display: none;
+}
+
 main h3 {
     font-family: 'Slabo 27px', serif;
     text-align: center;
@@ -111,35 +116,47 @@ main h4 {
     font-size: 30px;
 }
 
-article {
+
+h5 {
+    font-family: 'Slabo 27px', serif;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #568a7bff;
+    text-align: center;
+}
+
+.cards section {
+    background-color: #d6ebe8ff;
+    box-shadow: 1px 1px 10px 2px rgb(172, 177, 181);
+    border: solid 2px rgb(171, 235, 227);
+    width: 300px; 
+}
+
+.cards {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    grid-gap: 10px;
-    padding: 20px;
-    margin: 10px 20px 10px 20px;
-    background-color: #d6ebe8ff; 
+    grid-gap: 30px;
+    margin: 20px 20px 50px 20px;
+    
 }
+
 
 p {
     text-align: center;
-    font-family: 'Lato', sans-serif;  
-
+    font-family: 'Lato', sans-serif;
+    margin: 5px;  
 }
 
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 30px auto 0 auto;
 }
 
 /* ----------------- contact info --------------------- */
-h4 {
-    font-family: 'Slabo 27px', serif;
-    font-size: 25px;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
+
+
 .contact {
     text-align: left;
     background-color: #d6ebe8ff;

@@ -29,15 +29,40 @@
         font-size: 40px;
     }
 
-    .gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-items: center;
-        justify-content: center;
+    .hero {
+        display: block;
     }
 
-    figure:hover {
-        box-shadow: 1px 1px 10px 5px #2d4e62ff;
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px;
+        max-width: 1100px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -155px;
+    }
+
+    .cards section {
+        display: block;
+    }
+
+
+
+    article .cards section:nth-child(even) div {
+        padding: 0;
+    }
+
+    article .cards section:nth-child(odd) div {
+        padding: 0;
+    }
+
+    .cards section img {
+        margin-top: 20px;
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
     }
 
 }
