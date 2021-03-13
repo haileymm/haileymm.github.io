@@ -106,24 +106,30 @@ fetch(apiURL2)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
-    let weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    var days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thu', 'Fri', 'Sat']
+    
+    
     
 
     for (i=0; i < jsObject.list.length; i++) {
         if (jsObject.list[i].dt_txt.includes("18:00:00") == true) {
             
             let section = document.createElement('section');
-            let p1 = document.createElement('p');
-            let p2 = document.createElement('p');
+            let h5 = document.createElement('h5');
+            let p = document.createElement('p');
             let image = document.createElement('img');
+            
+            var d = new Date(jsObject.list[i].dt_txt);
+            var dayName = days[d.getDay()];
+            console.log(d)
            
             
             
         
 
         
-            p1.textContent = day;
-            p2.textContent = jsObject.list[i].main.temp.toFixed(0) + "\xB0" + " F";
+            h5.textContent = dayName;
+            p.textContent = jsObject.list[i].main.temp.toFixed(0) + "\xB0" + " F";
            
             image.setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png');
             image.setAttribute('alt', "weather icon");
@@ -133,8 +139,8 @@ fetch(apiURL2)
 
             
         
-            section.appendChild(p1);
-            section.appendChild(p2);
+            section.appendChild(h5);
+            section.appendChild(p);
             section.appendChild(image);
             
             

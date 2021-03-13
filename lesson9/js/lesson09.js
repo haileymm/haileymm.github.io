@@ -1,4 +1,5 @@
-// Menu
+
+  // Menu
 
 function toggleMenu() {
     console.log(document.getElementById('primaryNav').classList);
@@ -130,5 +131,4 @@ fetch(requestURL)
     }
     
   });
-
 
