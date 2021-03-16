@@ -1,0 +1,511 @@
+
+body {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #FAFFFD;
+    width: 100%;
+}
+
+
+/* ----------------- header --------------------- */
+
+#announcement {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fcca46ff;
+    padding: 20px;
+}
+
+header {
+    background-color: #d6ebe8ff;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+} 
+
+header picture img {
+    width: 100px;
+    height: auto;
+    margin-top: 0px
+    
+}
+
+header h1 {
+    font-family: 'Slabo 27px', serif;
+    color: #2d4e62ff;
+    font-size: 2em;
+    margin-top: 5px;
+    
+}
+
+header h2 {
+    font-family: 'Lato', sans-serif;
+    color: #568a7bff;
+    font-size: 1.5em;
+    margin-top: -20px;
+
+}
+
+
+/* ----------------- navigation --------------------- */
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+nav {
+    background-color: #2dc8b6ff;
+    margin-top: -20px;
+    text-align: center;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color:black;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    display: block;
+    padding-left: 0;
+
+}
+
+nav ul.hide {
+    display: none;
+}
+
+nav ul li {
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+nav ul li:hover {
+    background-color:#2d4e62ff;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 20px 10px 20px 10px;
+
+}
+
+nav ul li a:hover {
+    color: white;
+}
+nav ul .active {
+    background-color:rgba(25, 43, 54, 0.253);
+    color: white;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* ----------------- main --------------------- */
+
+.hero {
+    display: none;
+    margin: 40px 0 40px 0;
+}
+
+.homehero {
+    display: none;
+}
+
+main h3 {
+    font-family: 'Slabo 27px', serif;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2d4e62ff;
+    font-size: 35px;
+}
+
+main h4 {
+    font-family: 'Slabo 27px', serif;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #2d4e62ff;
+    font-size: 30px;
+}
+
+
+h5 {
+    font-family: 'Slabo 27px', serif;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #2d4e62ff;
+    text-align: center;
+    padding: 0 21px 0 21px;
+}
+
+.cards section {
+    background-color: #d6ebe8ff;
+    box-shadow: 1px 1px 10px 2px rgb(172, 177, 181);
+    border: solid 2px rgb(171, 235, 227);
+    width: 70%;
+}
+
+.cards h4 {
+    padding: 20px;
+}
+
+.cards img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 30px;
+    margin: 40px 20px 50px 20px;
+    
+}
+
+
+p {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin: 5px;  
+}
+
+img {
+    display: block;
+    margin: 30px auto 0 auto;
+}
+
+.events {
+    box-shadow: 1px 1px 10px 2px rgb(172, 177, 181);
+    margin: 0 20px 50px 20px;
+}
+
+.events h3 {
+    background-color: #d6ebe8ff;
+    padding: 20px;
+}
+
+.events ul li {
+    font-family: 'Lato', sans-serif;
+    margin: 20px;
+    list-style: none;
+}
+
+.events ul {
+    padding: 20px;
+}
+
+main h3 {
+    font-family: 'Slabo 27px', serif;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #2d4e62ff;
+    font-size: 35px;
+}
+
+.hero {
+    width: 80%;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    
+}
+
+.hero img {
+    width: 1200px;
+    height: auto;
+    margin-top: -225px;
+    margin-left: -300px;
+
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    padding-left: 35px;
+}
+
+div .label {
+    font-family: 'Lato', sans-serif;
+    text-align: right;
+    margin-right: 5px;
+}
+
+div .info {
+    text-align: left;
+    margin-left: 5px;
+    font-family: 'Lato', sans-serif;
+}
+
+.summary {
+    padding-top: 45px;
+    margin-top: 20px;
+    background-color: #d6ebe8ff;
+    text-align: center;
+    line-height: 1.5;
+    box-shadow: 3px 3px 20px gray;
+    width: 100%;
+    height: 250px;
+}
+
+h4 {
+    font-family: 'Slabo 27px', serif;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.summary p {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+.forecast {
+    list-style: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.forecast h5 {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.forecast section {
+    display: inline-block;
+    background-color: #d6ebe8ff; 
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+
+.forecast section img {
+    display: block;
+    width: 40px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.article {
+    padding: 30px;
+    background-color: #d6ebe8ff;
+    margin: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    margin-top: 50px;
+     
+}
+
+.article img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 20px auto 20px auto;
+}
+
+/* ----------------- weather gallery --------------------- */
+
+img {
+    filter: blur(0px);
+    transition: filter 2s;
+}
+
+img[data-src] {
+    filter: blur(3px);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+    grid-gap: 30px;
+    margin: 40px 0 40px 0;
+}
+
+figure {
+    box-shadow: 1px 1px 5px 1px #8888;
+    width: 325px;
+    overflow: hidden;
+    margin: 0;
+}
+
+figcaption {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* ----------------- stormcenter form --------------------- */
+form {
+    padding: 0px 25px 0px 25px;
+    max-width: 600px;
+    margin: -5px auto 50px auto;
+}
+
+form fieldset {
+    margin: 20px;
+    border: 2px solid #d6ebe8ff;
+    border-radius: 4px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #2d4e62ff;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Slabo 27px', serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+form label.top, form div {
+    display: block;
+    padding: 15px 0 5px 0;
+    color: #2d4e62ff;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+ }
+
+form label.sbs {
+    display: block;
+    padding: 5px;
+    color: #2d4e62ff;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif; 
+}
+
+form label input {
+    margin-top: 5px;
+}
+
+
+form input {
+    padding: 7px;
+
+}
+
+input:invalid {
+	color: #000;
+    border: solid 3px #fcca46ff;
+    border-radius: 4px;
+}
+input:valid {
+	border: solid 2px #568a7bff;
+	color: #000;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 250px;
+    height: 100px;
+    margin-top: 5px;
+}
+
+.submitBtn {
+    display: block;
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+    padding: 15px;
+    background-color: #2dc8b6ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 30px auto 20px auto;
+    box-shadow: 2px 2px 10px 2px #2d4e62ff;
+}
+
+
+/* ----------------- thanks form message --------------------- */
+
+.thanks {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    padding: 5px 45px 45px 50px;
+    text-align: center;
+}
+
+/* ----------------- contact info --------------------- */
+
+.contact {
+    text-align: left;
+    background-color: #d6ebe8ff;
+    padding: 70px;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+
+
+div .phone {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+div .phone img {
+    width: 20px;
+    height: auto;
+    margin: 20px;
+}
+
+div .email {
+    display: flex;
+    align-items: center;
+}
+
+div .email img {
+    width: 20px;
+    height: auto;
+    margin: 20px;
+}
+
+div .map {
+    margin-top: 30px;
+}
+
+div .social {
+    display: none;
+}
+
+/* ----------------- footer --------------------- */
+
+footer {
+    background-color: #2dc8b6ff;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+

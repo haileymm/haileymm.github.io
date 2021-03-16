@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>SouthEast Idahome - Home</title>
+      <meta name="description" content="Home Page for Weather Site">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <!--<link href="https://fonts.googleapis.com/css2?family=Lato&family=Slabo+27px&display=swap" rel="stylesheet">-->
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/small.css">
+      <link rel="stylesheet" href="css/medium.css">
+      <link rel="stylesheet" href="css/large.css">
+    </head>
+    
+    <body> 
+      <header>
+          <picture><img class="logo" src="images/logo.png" alt="SE Idaho Logo"></picture>
+          <section>
+            <h1>Southeast Idahome</h1>
+            <h2>A place to connect</h2>
+          </section>
+      </header>
+      <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+          <ul id="primaryNav" class="hide">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="preston.html">Preston</a></li>
+                  <li><a href="sodasprings.html">Soda Springs</a></li>
+                  <li><a href="fishhaven.html">Fish Haven</a></li>
+                  <li><a href="stormcenter.html">Storm Center</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+              </ul>
+      </nav>
+      
+      <main>
+        <h3>Welcome</h3>
+
+        <img class="homehero" src="images/hero.jpg" alt="grass texture" class="hero" loading="lazy">
+
+        <div class="cardgrid">
+
+        <div class="cards"></div>
+
+        </div>
+
+        <div class="events">
+          <h3>Upcoming Events</h3>
+          <ul>
+            <li><strong>March 10th:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            <li><strong>March 15th:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet aliquam id diam.</li>
+            <li><strong>March 21st:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet aliquam id diam.</li>
+            <li><strong>March 30th:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+          </ul>
+        </div>
+
+
+        <div class="contact">
+          <h4>Contact Information</h4>
+          <div class='phone'><img src="images/phone.png" alt="phone icon">
+          <p>(123) 456-7890</p>
+          </div>
+          <div class="email"><img src="images/email.png" alt="email icon">
+          <p> info@southeastidahome.com</p>
+          </div>
+          <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1498704.0466782819!2d-113.26747061492317!3d42.80618214987265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssoutheast%20idaho!5e0!3m2!1sen!2sus!4v1612471535739!5m2!1sen!2sus" width="200" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <div class="social">
+            <div><img src="images/phone.png" alt="phone icon">
+              <p>(123) 456-7890</p>
+              </div>
+              <div><img src="images/email.png" alt="email icon">
+              <p> info@southeastidahome.com</p>
+              </div>
+            <div class="social_links">
+            <img src="images/facebook.png" alt="facebook logo">
+            <img src="images/insta.png" alt="instagram logo">
+            <img src="images/twitter.png" alt="twitter logo">
+            </div>
+          </div>
+        </div>
+           
+      </main>    
+      <footer>
+        <span id="year"></span>
+        <div id="output"></div>
+      </footer>
+
+      <script src="js/index.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script>WebFont.load({
+        google: {
+          families: [
+             'Slabo 27px', 'Lato'
+          ]
+        }
+      });</script>
+
+    </body>
+  
+</html> 
+

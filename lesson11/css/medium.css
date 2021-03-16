@@ -1,0 +1,180 @@
+@media only screen and (min-width: 900px) {
+    .logo {
+        width: 175px;
+        height: auto;
+        margin-top: -10px;
+    }
+
+    
+    header h1{
+        font-size: 50px;
+    }
+    
+
+/* ----------------NAV---------------- */
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    nav ul li {
+        float: left;
+        font-size: 15px;
+        padding: 20px;
+    }
+
+/* ------------------MAIN-------------------- */
+    main h1 {
+        font-size: 40px;
+    }
+
+    .homehero {
+        display: none;
+    }
+
+    .summary {
+        position: absolute;
+        top: 340px;
+        left: 175px;
+        background-color: rgba(214, 235, 232, 0.63);
+        box-shadow: none;
+        width: 350px;
+        text-align: center;
+    }
+
+    .hero img {
+        margin-left: 0;
+    }
+
+    .forecast {
+        list-style: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .forecast section {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    .forecast section img {
+        width: 60px;
+        height: auto;
+    
+    }
+    .article {
+        padding: 50px;
+        
+    }
+
+    .article {
+        margin-top: 50px;
+    }
+    .article img {
+        float: right;
+        margin: 50px 50px 50px 50px;
+        width: 250px;
+        height: auto;
+    }
+
+    .article h4, h5, p {
+        text-align: left;
+    }
+       
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+
+    
+    .cards section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        width: 70%;
+        padding: 20px;
+    }
+
+    .cards h4 {
+        margin: -20px auto 5px auto;
+        text-align: center;
+    }
+
+    .cards h5, p {
+        text-align: center;
+    }
+
+
+    .cards section:nth-child(odd) div {
+        grid-column: 2;
+        grid-row: 1;
+    
+    }
+
+    .cards section:nth-child(odd) img {
+        grid-column: 1;
+        margin: 10px;
+    }
+
+    .cards section:nth-child(even) img {
+        margin: 0;
+    }
+
+
+    
+    
+/* -------------CONTACT--------------- */
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    div .phone {
+        display: none;
+    }
+
+    div .email {
+        display: none;
+    }
+
+    div .social {
+        display: block;
+    }
+
+    .social div {
+        grid-column: 2/3;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .map {
+        grid-column: 1/2;
+        margin: 20px;
+    }
+
+    .social img {
+        width: 20px;
+        height: auto;
+        margin: 20px;
+        
+    }
+
+    .social_links img {
+        margin: 70px 20px 20px 20px;
+        width: 50px;
+        height: auto;
+    }
+    
+    
+}
