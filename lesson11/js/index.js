@@ -1,4 +1,5 @@
 
+
 function toggleMenu() {
     console.log(document.getElementById('primaryNav').classList);
     document.getElementById('primaryNav').classList.toggle('hide');
@@ -120,6 +121,7 @@ const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
+
     console.log(jsObject);
 
     temperature = jsObject.main.temp;
@@ -127,9 +129,11 @@ fetch(apiURL)
     
     document.getElementById('current').textContent = jsObject.weather[0].description;
     document.getElementById('temperature').textContent = temperature.toFixed(0);
-    document.getElementById('windchill').textContent = windChill(temperature, windspeed).toFixed(0);
+    document.getElementById('windchill').textContent = windChill(temperature.toFixed(0), windspeed);
     document.getElementById('humidity').textContent = jsObject.main.humidity;
     document.getElementById('windspeed').textContent = windspeed.toFixed(0);
+
+    
 
 
 });
@@ -138,7 +142,7 @@ const apiURL2 = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&uni
 fetch(apiURL2)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+
     var days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thu', 'Fri', 'Sat']
     
     
@@ -154,7 +158,6 @@ fetch(apiURL2)
             
             var d = new Date(jsObject.list[i].dt_txt);
             var dayName = days[d.getDay()];
-            console.log(d)
            
             
             
@@ -193,7 +196,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+
     const towns = jsonObject['towns'];
 
     for (let i = 0; i < towns.length; i++ ) {
@@ -236,11 +239,9 @@ fetch(requestURL)
     
   });
 
+  function windChill(temperature, windSpeed) {
 
-
-function windChill(temperature, windSpeed) {
-
-    if (temperature <= 50) {
+    if (temperature <= 50 || windSpeed < 3) {
         var windChill = Math.round(35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temperature * Math.pow(windSpeed, 0.16)));
         return windChill
     }

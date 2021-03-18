@@ -1,9 +1,8 @@
 @media only screen and (min-width: 1200px) {
-    
     .logo {
-        width: 175px;
+        width: 140px;
         height: auto;
-        margin-top: -10px;
+        margin-top: -8px;
     }
 
     header h1{
@@ -32,7 +31,7 @@
 
     .homehero {
         display: block;
-        width: 1200px;
+        max-width: 80%;
         height: 300px;
         z-index: -1;
         position: relative;
@@ -46,12 +45,6 @@
         float: right;
         margin-top: -50px;
         width: 250px;
-    }
-
-    .logo {
-        width: 175px;
-        height: auto;
-        margin-top: -10px;
     }
     
     header h1{
@@ -81,6 +74,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
+        justify-items: center;
+        max-width: 1000px;
+        margin: 40px auto 40px auto;
     }
 
     figure:hover {
