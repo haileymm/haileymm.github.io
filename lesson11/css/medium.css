@@ -41,6 +41,27 @@
         display: none;
     }
 
+
+    .fhhero {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        margin-top: 40px;
+        
+    }
+    
+    .fhhero img {
+        width: 80%;
+        height: auto;
+        margin-top: -50px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
     
 
     .hero {
@@ -67,12 +88,13 @@
     .summary {
         position: absolute;
         top: 5px;
-        left: 150px;
+        left: 200px;
         background-color: rgba(214, 235, 232, 0.63);
         box-shadow: none;
         width: 350px;
         text-align: center;
     }
+
 
     .forecast {
         list-style: none;
@@ -80,6 +102,10 @@
         width: 100%;
     }
 
+    .forecast h5, .ssforecast h5, .fhforecast h5 {
+        font-size: 20px;
+    }
+    
     .forecast section {
         font-size: 15px;
     }
@@ -90,6 +116,19 @@
     
     }
 
+    div.article img {
+        width: 400px;
+        height: auto;
+        display: block;
+        margin: 30px;
+    }
+    div.prestonarticle img {
+        width: 200px;
+        height: auto;
+        display: block;
+        margin: 30px;
+        float: right;
+    }
     .article {
         margin-top: 50px;
         padding: 50px;

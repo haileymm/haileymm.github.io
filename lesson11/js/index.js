@@ -111,11 +111,12 @@ document.getElementById("year").innerHTML = "&#169; " + year + " Hailey Mundt";
 document.getElementById("output").innerHTML = day + ', ' + dayNum + ' ' + month + ' ' + year;
 
 
+
 function adjustRating(rating) {
     document.getElementById("ratingvalue").innerHTML = rating;
 }
 
-
+// -----------------------------------------Preston Weather Summary forcast-------------------------------------------
 
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=8330069d5a1cb43a8d6a255083eddf1b";
 fetch(apiURL)
@@ -133,10 +134,9 @@ fetch(apiURL)
     document.getElementById('humidity').textContent = jsObject.main.humidity;
     document.getElementById('windspeed').textContent = windspeed.toFixed(0);
 
-    
-
-
 });
+
+
 
 const apiURL2 = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=8330069d5a1cb43a8d6a255083eddf1b'
 fetch(apiURL2)
@@ -188,6 +188,243 @@ fetch(apiURL2)
 
 
 });
+
+const requestURL2 = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL2)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+
+    const towns = jsonObject['towns'];
+    const events = towns[6].events
+
+    for (let i = 0; i < towns[6].events.length; i++ ) {
+        
+        
+        let event = document.createElement('div');
+        let text = document.createElement('p');
+
+
+        
+        text.textContent = events[i];
+
+
+        event.appendChild(text)
+
+        document.querySelector('div.prestonevents').appendChild(event);
+
+    }
+    
+  });
+
+// -----------------------------------------Soda Springs Weather Summary forcast-------------------------------------------
+
+const apiURL3 = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=8330069d5a1cb43a8d6a255083eddf1b";
+fetch(apiURL3)
+  .then((response) => response.json())
+  .then((jsObject) => {
+
+    console.log(jsObject);
+
+    temperature = jsObject.main.temp;
+    windspeed = jsObject.wind.speed;
+    
+    document.getElementById('sscurrent').textContent = jsObject.weather[0].description;
+    document.getElementById('sstemperature').textContent = temperature.toFixed(0);
+    document.getElementById('sswindchill').textContent = windChill(temperature.toFixed(0), windspeed);
+    document.getElementById('sshumidity').textContent = jsObject.main.humidity;
+    document.getElementById('sswindspeed').textContent = windspeed.toFixed(0);
+
+    
+
+
+});
+
+const apiURL4 = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&APPID=8330069d5a1cb43a8d6a255083eddf1b'
+fetch(apiURL4)
+  .then((response) => response.json())
+  .then((jsObject) => {
+
+    var days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thu', 'Fri', 'Sat']
+    
+    
+    
+
+    for (i=0; i < jsObject.list.length; i++) {
+        if (jsObject.list[i].dt_txt.includes("18:00:00") == true) {
+            
+            let section = document.createElement('section');
+            let h5 = document.createElement('h5');
+            let p = document.createElement('p');
+            let image = document.createElement('img');
+            
+            var d = new Date(jsObject.list[i].dt_txt);
+            var dayName = days[d.getDay()];
+           
+            
+            
+        
+
+        
+            h5.textContent = dayName;
+            p.textContent = jsObject.list[i].main.temp.toFixed(0) + "\xB0" + " F";
+           
+            image.setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png');
+            image.setAttribute('alt', "weather icon");
+            
+           
+        
+
+            
+        
+            section.appendChild(h5);
+            section.appendChild(p);
+            section.appendChild(image);
+            
+            
+            document.querySelector('div.ssforecast').appendChild(section);
+            
+        }
+    }
+
+
+
+});
+
+fetch(requestURL2)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+
+    const towns = jsonObject['towns'];
+    const events = towns[0].events
+    console.log(events[1]);
+
+    for (let i = 0; i < towns[0].events.length; i++ ) {
+        
+        
+        let event = document.createElement('div');
+        let text = document.createElement('p');
+
+
+        
+        text.textContent = events[i];
+
+
+        event.appendChild(text)
+
+        document.querySelector('div.ssevents').appendChild(event);
+
+    }
+    
+  });
+
+  // -----------------------------------------Fish Haven Weather Summary forcast-------------------------------------------
+
+const apiURL5 = "https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&APPID=8330069d5a1cb43a8d6a255083eddf1b";
+fetch(apiURL5)
+  .then((response) => response.json())
+  .then((jsObject) => {
+
+    console.log(jsObject);
+
+    temperature = jsObject.main.temp;
+    windspeed = jsObject.wind.speed;
+    
+    document.getElementById('fhcurrent').textContent = jsObject.weather[0].description;
+    document.getElementById('fhtemperature').textContent = temperature.toFixed(0);
+    document.getElementById('fhwindchill').textContent = windChill(temperature.toFixed(0), windspeed);
+    document.getElementById('fhhumidity').textContent = jsObject.main.humidity;
+    document.getElementById('fhwindspeed').textContent = windspeed.toFixed(0);
+
+    
+
+
+});
+
+const apiURL6 = 'https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&APPID=8330069d5a1cb43a8d6a255083eddf1b'
+fetch(apiURL6)
+  .then((response) => response.json())
+  .then((jsObject) => {
+
+    var days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thu', 'Fri', 'Sat']
+    
+    
+    
+
+    for (i=0; i < jsObject.list.length; i++) {
+        if (jsObject.list[i].dt_txt.includes("18:00:00") == true) {
+            
+            let section = document.createElement('section');
+            let h5 = document.createElement('h5');
+            let p = document.createElement('p');
+            let image = document.createElement('img');
+            
+            var d = new Date(jsObject.list[i].dt_txt);
+            var dayName = days[d.getDay()];
+           
+            
+            
+        
+
+        
+            h5.textContent = dayName;
+            p.textContent = jsObject.list[i].main.temp.toFixed(0) + "\xB0" + " F";
+           
+            image.setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png');
+            image.setAttribute('alt', "weather icon");
+            
+           
+        
+
+            
+        
+            section.appendChild(h5);
+            section.appendChild(p);
+            section.appendChild(image);
+            
+            
+            document.querySelector('div.fhforecast').appendChild(section);
+            
+        }
+    }
+
+
+
+});
+
+fetch(requestURL2)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+
+    const towns = jsonObject['towns'];
+    const events = towns[2].events
+
+    for (let i = 0; i < towns[2].events.length; i++ ) {
+        
+        
+        let event = document.createElement('div');
+        let text = document.createElement('p');
+
+
+        
+        text.textContent = events[i];
+
+
+        event.appendChild(text)
+
+        document.querySelector('div.fhevents').appendChild(event);
+
+    }
+    
+  });
+
+// ----------------------------------------Home town sections----------------------------------------------
 
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
@@ -250,4 +487,14 @@ fetch(requestURL)
         return "N/A";
     }
 
+}
+
+// ----------------------------------pancake announcement--------------------------------------------
+
+if (day == "Friday") {
+    document.getElementById("announcement").innerHTML = "Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.";
+}
+
+if (day != "Friday") {
+    document.getElementById("announcement").style.display = 'none';
 }
