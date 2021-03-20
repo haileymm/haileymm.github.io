@@ -87,7 +87,7 @@
 
     .summary {
         position: absolute;
-        top: 5px;
+        top: 325px;
         left: 200px;
         background-color: rgba(214, 235, 232, 0.63);
         box-shadow: none;
@@ -117,18 +117,20 @@
     }
 
     div.article img {
-        width: 400px;
-        height: auto;
-        display: block;
-        margin: 30px;
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 30px;
     }
+
     div.prestonarticle img {
-        width: 200px;
-        height: auto;
-        display: block;
-        margin: 30px;
-        float: right;
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 30px;
+    float: right;
     }
+
     .article {
         margin-top: 50px;
         padding: 50px;
