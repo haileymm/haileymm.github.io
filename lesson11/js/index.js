@@ -180,7 +180,7 @@ fetch(apiURL2)
             section.appendChild(image);
             
             
-            document.querySelector('div.forecast').appendChild(section);
+            document.querySelector('div.forecast')?.appendChild(section);
             
         }
     }
@@ -213,7 +213,7 @@ fetch(requestURL2)
 
         event.appendChild(text)
 
-        document.querySelector('div.prestonevents').appendChild(event);
+        document.querySelector('div.prestonevents')?.appendChild(event);
 
     }
     
@@ -284,7 +284,7 @@ fetch(apiURL4)
             section.appendChild(image);
             
             
-            document.querySelector('div.ssforecast').appendChild(section);
+            document.querySelector('div.ssforecast')?.appendChild(section);
             
         }
     }
@@ -316,7 +316,7 @@ fetch(requestURL2)
 
         event.appendChild(text)
 
-        document.querySelector('div.ssevents').appendChild(event);
+        document.querySelector('div.ssevents')?.appendChild(event);
 
     }
     
@@ -387,7 +387,7 @@ fetch(apiURL6)
             section.appendChild(image);
             
             
-            document.querySelector('div.fhforecast').appendChild(section);
+            document.querySelector('div.fhforecast')?.appendChild(section);
             
         }
     }
@@ -418,7 +418,7 @@ fetch(requestURL2)
 
         event.appendChild(text)
 
-        document.querySelector('div.fhevents').appendChild(event);
+        document.querySelector('div.fhevents')?.appendChild(event);
 
     }
     
@@ -470,7 +470,7 @@ fetch(requestURL)
         
         
 
-        document.querySelector('div.cards').appendChild(card);
+        document.querySelector('div.cards')?.appendChild(card);
         }
     }
     
