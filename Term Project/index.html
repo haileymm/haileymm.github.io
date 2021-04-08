@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Reno Chamber of Commerce</title>
+      <meta name="description" content="Home page for the Reno-Sparks Chamber of Commerce">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/small.css">
+      <link rel="stylesheet" href="css/medium.css">
+      <link rel="stylesheet" href="css/large.css">
+    </head>
+    
+    <body> 
+      <header>
+          <img src="images/logo.png" alt="Reno-Sparks Chamber of Commerce Logo">
+          <h1>Reno Chamber of Commerce</h1>
+
+      </header>
+      <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+          <ul id="primaryNav" class="hide">
+            <a href="index.html"><li class="active">Home</li></a>
+            <a href="reno.html"><li>Reno</li></a>
+            <a href="join.html"><li>Join</li></a>
+            <a href="directory.html"><li>Directory</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+              </ul>
+      </nav>
+      
+      <main>
+
+        <div class="hero">
+          <img src="images/mountains.jpg" alt="Beautiful mountains surrounding Reno, NV" loading="lazy">
+        </div>
+
+          <div class="infogrid">
+             
+            <div class="joinbox">
+                <h2>Support Buisness,</br>Make a Difference.</h2>
+                <a href="join.html"><button id="joinbutton">Join Today</button></a>
+            </div>
+
+            <div class="current" id="currentweather">
+              <h3>Current Weather</h3>
+              <div id="current"></div>
+              <div id="temperature">&#176; F</div>
+              <div id="humidity"></div>
+            </div>
+
+            <div class="forecast" id="forecast">
+              <h3>Three Day Forecast</h3>
+            </div>
+
+          </div>
+
+          <section class="events">
+              <h1>Upcoming Events</h1>
+
+              <div class="eventinfo">
+                <h2>Rain: A Tribute to the Beatles</h2>
+                <p>April 3rd, 2021 -<strong> POSTPONED, date TBD</strong></p>
+                <h2>Comstock Arabian Association Spring Fiesta Horse Show</h2>
+                <p>April 30th - May 2, 2021</p>
+
+                <h2>A.V.A. Ballet Theatre presents The Little Mermaid</h2>
+                <p>May 1st - May 2nd, 2021</p>
+              </div>
+
+              <div class="event-gallery">
+                <figure class="sign">
+                  <img src="images/reno-sign.jpg" alt="Biggest Little City Sign" loading="lazy">
+                </figure>
+                <figure class="balloons">
+                  <img src="images/balloons.jpg" alt="Reno Balloon Race" loading="lazy">
+                </figure>
+                <figure class="air-races">
+                  <img src="images/air-races.jpg" alt="Air races" loading="lazy">
+                </figure>                
+              </div>
+
+          </section>
+
+          <section class="cards">
+              <h1>Local Buisness Spotlight</h1>
+              <div class="ads"></div>
+          </section>
+
+          <section class="contactinfo">
+              <h1>Contact Information</h1>
+              <h2>Reno Chamber of Commerce</h2 >
+              <p>2322 Virginia St.<br> Reno, NV 89501<br>(775)456-9876<br><br>renosparks@commerce.com</p>
+
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32167.122182134884!2d-119.82660320859176!3d39.50942371030037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8099409016c938b1%3A0x79faf9bed6f19376!2s2322%20S%20Virginia%20St%2C%20Reno%2C%20NV%2089502!5e0!3m2!1sen!2sus!4v1617081904059!5m2!1sen!2sus" width="80%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>           
+            </div>
+
+            <div class="sociallinks">
+                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook logo"></a>
+                <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram logo"></a>          
+            </div>
+
+      </main>    
+      <footer>
+        <span id="year"></span>
+        <div id="output"></div>
+        <a href="attributions.html">Site Attributions</a>
+      </footer>
+
+      <script src="js/index.js"></script>
+      
+
+    </body>
+  
+</html>

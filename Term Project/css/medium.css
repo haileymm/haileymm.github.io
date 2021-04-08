@@ -1,0 +1,198 @@
+@media only screen and (min-width: 650px) {
+
+/*-------------------------------------header--------------------------------------------*/
+
+header {
+    display: flex;
+    background-color: #383838;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 7.5%;
+    justify-content: left;
+    box-shadow: 2px 2px 5px black;
+}
+
+header img {
+    width: 35px;
+    margin: 10px 10px 10px 50px;
+}
+
+header h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 25px;
+    color: #E6EDEF;
+    margin-top: 20px;
+}
+/* --------------------------------Navigation----------------------------------- */
+
+nav button {
+    display: none;
+}
+
+.hide {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 12px;
+    width: 100px;
+    background-color: #255c99;
+    color: white;
+    
+}
+
+nav ul li:hover {
+    border-radius: 4px;
+}
+
+nav ul li.active {
+    border-radius: 4px;
+    color: black;
+}
+
+nav a, nav a:link, nav a:visited {
+    text-decoration: none;
+    background-color: #778899;
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.hero img {
+    margin-top: -35px;
+}
+
+
+/*-----------------------------------------------info grid------------------------------*/
+
+.infogrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    margin-top: 125px;
+}
+
+.joinbox, .current, .forecast {
+    width: 100%;
+    height: auto;
+}
+
+.joinbox {
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: 0;
+    
+}
+
+.current {
+    height: 200px;
+}
+
+.event-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    justify-content: center;
+    grid-gap: 30px;
+    width: 75%;
+    margin: 40px auto 40px auto;
+    
+}
+
+figure {
+    width: 100%;
+    margin: 0;
+}
+
+figure.balloons img {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+.balloons {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+section h1 {
+    text-align: left;
+    padding-left: 12.5%;
+}
+
+.joingrid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.directoryg {
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.directoryl {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    background-color: #e6edefa8;
+    padding: 40px 12.5% 40px 12.5%;
+
+}
+
+.directoryl section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px 0 5px 0;
+}
+
+.directoryl h4 {
+    font-family: "Noto Serif JP", serif;
+    margin: 10px 5px 10px 0;
+    display: block;
+}
+
+.directoryl h5 {
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 10px 5px 10px 0;
+}
+
+.directoryl p {
+    font-family: "Noto Sans JP", sans-serif;
+    display: block;
+    margin: 5px 5px 5px 0;
+}
+
+.directoryl img {
+    width: 100px;
+    height: auto;
+    float: right;
+}
+
+
+
+.viewbuttons {
+    display: block;
+    background-color: #E6EDEF;
+    padding: 10px 12.5% 10px 12.5%;
+}
+.viewbuttons img {
+    display: inline;
+    width: 20px;
+    margin: 5px;
+}
+
+.viewbuttons ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+}
+
+}

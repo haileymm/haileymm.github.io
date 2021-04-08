@@ -5,6 +5,7 @@ function toggleMenu() {
     document.getElementById('primaryNav').classList.toggle('hide');
 }
 
+
 // lazy load
 
 let imagesToLoad = document.querySelectorAll('img[data-src]');

@@ -1,0 +1,56 @@
+{
+    "directory": [
+      {
+        "name": "Grassroots Books",
+        "logo": "grassroots.jpg",
+        "website": "www.grassrootsbooks.com",
+        "phone": "775-828-2665",
+        "address": "660 E. Grove St., Reno, NV 89502",
+        "ad_text": "Book lover’s paradise: Everything is 99¢ or less in our Outside Sale. And every Sunday, you can fill a bag for $4.99. We add new inventory every day, and kick-off every Tuesday with all fresh stock."
+      },
+      {
+        "name": "Sierra Trading Post",
+        "logo": "sierratp.jpg",
+        "website": "www.sierra.com/reno-nv~l~5",
+        "phone": "775-828-8050",
+        "address": "6139 S. Virginia St., Reno, NV 89502",
+        "ad_text": "Sierra offers the top brands for an active and outdoor lifestyle, with a vast selection of products for men, women, children & pets at amazing savings."
+      },
+      {
+        "name": "Orange Pedal Reno",
+        "logo": "orangepedal.png",
+        "website": "www.orangepedalcycling.com",
+        "phone": "775-870-1636",
+        "address": "1185 California Avenue, Suite H, Reno, NV 89509",
+        "ad_text": "We are family owned and operated proudly serving all types of cyclists, including new and veteran riders, road, mountain, CX, gravel aficionados, or recreation and transportation cyclists."
+      },
+      {
+        "name": "Playful Potter",
+        "logo": "playfulpotter.jpg",
+        "website": "www.playfulpotter.com",
+        "phone": "775-356-5811",
+        "address": "1351 E. Prater Way #109  Sparks, NV 89434"
+      },
+      {
+        "name": "Sierra Nevada Chocolate",
+        "logo": "snchocolates.jpg",
+        "website": "www.sierranevadachocolates.com",
+        "phone": "775-323-2462",
+        "address": "1290 S. Virginia St. Reno, NV "
+      },
+      {
+        "name": "Western Nevada Supply",
+        "logo": "wnsupply.jpg",
+        "website": "www.goblueteam.com",
+        "phone": "775-690-8706",
+        "address": "950 S Rock Blvd, Sparks, NV 89431"
+      },
+      {
+        "name": "Andy's Lock and Key",
+        "logo": "andyslock.jpg",
+        "website": "www.andyslock.com",
+        "phone": "775-322-8588",
+        "address": "199 E. Plumb Lane 89502 Reno, NV"
+      }
+    ]
+  }

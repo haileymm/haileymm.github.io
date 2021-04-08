@@ -1,0 +1,27 @@
+@media only screen and (min-width: 1000px) {
+
+/* ---------------------------Hero------------------------------------- */
+
+.hero {
+    height: 400px;
+}
+
+.hero img {
+    margin-top: -250px;
+}
+
+.hero img {
+    margin-top: -170px;
+
+}
+
+.directoryg {
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.joingrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+}
